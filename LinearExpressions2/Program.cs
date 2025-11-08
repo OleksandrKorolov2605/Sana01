@@ -15,5 +15,18 @@
         
         Console.WriteLine($"z1 = {z1}");
         Console.WriteLine($"z2 = {z2}");
+
+        double a, b, x, y;
+        
+        Console.Write("Enter the value of a: ");
+        a = double.Parse(Console.ReadLine());
+        Console.Write("Enter the value of b: ");
+        b = double.Parse(Console.ReadLine());
+        Console.Write("Enter the value of x: ");
+        x = double.Parse(Console.ReadLine());
+        
+        y = 2.4 * Math.Abs((Math.Pow(x,2) + b) / a) + (a - b) * Math.Pow(Math.Sin(a - b), 2) + Math.Pow(10, -2) * (x - b);
+        
+        Console.WriteLine($"y = {y}");
     }
 }
